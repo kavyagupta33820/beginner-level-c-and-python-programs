@@ -1,0 +1,8 @@
+# Write a program to print the Fibonacci series up to n terms.
+n = int(input("Enter the number of terms: "))
+a, b = 0, 1
+
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
+print()

@@ -1,0 +1,15 @@
+# Compiled C programs
+*.out
+*.o
+*.exe
+a.out
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Files created when running programs
+data.txt
+
+# macOS
+.DS_Store

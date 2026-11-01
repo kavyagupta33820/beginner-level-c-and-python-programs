@@ -1,0 +1,26 @@
+/* Write a program to find the factorial of a number using recursion. */
+#include <stdio.h>
+
+long long fact(int n);
+
+int main() {
+	int n;
+
+	printf("Enter a number: ");
+	scanf("%d", &n);
+
+	if (n < 0) {
+		printf("Factorial is not defined for negative numbers.\n");
+	} else {
+		printf("Factorial of %d = %lld\n", n, fact(n));
+	}
+
+	return 0;
+}
+
+long long fact(int n) {
+	if (n <= 1) {
+		return 1;
+	}
+	return n * fact(n - 1);
+}
